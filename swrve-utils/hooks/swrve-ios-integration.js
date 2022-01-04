@@ -97,12 +97,13 @@ var self = (module.exports = {
 		replaceWith.push(didReceiveRemoteNotificationSwrveImplementation);
 
 
+		/*
 		const didRegisterForRemoteNotificationsWithDeviceToken = fs.readFileSync(
 			path.join('plugins', 'cordova-plugin-swrve', 'swrve-utils', 'ios', 'didRegisterForRemoteNotificationsWithDeviceToken.txt')
 		);
 		searchFor.push('@end');
 		replaceWith.push(didRegisterForRemoteNotificationsWithDeviceToken);
-
+		*/
 		// determine if we need to add appGroup information as well as modify pushEnabled
 		if (!swrveUtils.isEmptyString(appGroupIdentifier)) {
 			searchFor.push('config.pushEnabled = false;');
