@@ -1,0 +1,6 @@
+- (void)application:(UIApplication *)application 
+    didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    [SwrveSDK setDeviceToken:deviceToken];
+}
+
+@end
